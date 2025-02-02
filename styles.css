@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: navy;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav {
+    padding: 10px;
+    background: #ddd;
+    text-align: center;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+.case-details {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.case-details h2, h3 {
+    border-bottom: 2px solid navy;
+    padding-bottom: 5px;
+}
+.case-details p {
+    font-size: 16px;
+}
+.logo img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
