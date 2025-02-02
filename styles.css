@@ -1,56 +1,80 @@
+/* General Reset */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
 }
 
+/* Top Blue Bar */
 header {
-    background-color: #d4c7a1;
-    padding: 15px;
-    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
 }
 
-.logo img {
-    width: 50px;
-    vertical-align: middle;
+header .logo img {
+    height: 50px;
+    margin-right: 15px;
 }
 
-.logo h1, .logo p {
-    display: inline;
-    margin: 0 10px;
+header h1 {
+    margin: 0;
+    font-size: 22px;
 }
 
+header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: #e0e0e0;
     padding: 10px;
     text-align: center;
 }
 
 nav button {
-    background-color: #444;
+    background-color: #333;
     color: white;
-    padding: 10px 15px;
     border: none;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
-nav button:hover {
-    background-color: #555;
+/* Main Content Styling */
+main {
+    padding: 20px;
 }
 
 .case-details {
-    max-width: 900px;
     background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
-    color: #333;
+.case-details h2 {
+    font-size: 20px;
 }
 
+.case-details p {
+    margin: 5px 0;
+}
+
+/* Section Headers */
+h3 {
+    background-color: #f8e79e;
+    padding: 10px;
+    margin: 15px 0 5px 0;
+    border-radius: 3px;
+}
+
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -58,7 +82,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
 }
 
 th, td {
@@ -67,18 +91,32 @@ th, td {
 }
 
 th {
-    background-color: #d4c7a1;
+    background-color: #f2f2f2;
 }
 
-a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p[style="color: red;"] {
+/* Collapsible Sections */
+.collapsible {
+    background-color: #f8e79e;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
     font-weight: bold;
+}
+
+.collapsible:hover {
+    background-color: #ecd77e;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    background-color: white;
+}
+
+.active {
+    display: block;
 }
